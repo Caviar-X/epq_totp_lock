@@ -3,7 +3,6 @@
 
 #include "Keypad.h"
 #include "rgb_lcd.h"
-#include "sensor.h"
 #include <stdlib.h>
 // make other compiler happy
 #ifndef ARDUINO
@@ -32,7 +31,7 @@ static byte colPins[COLS] = { 5, 4, 3 };
  * default from line 2
  * -1 : failed to get value
  */
-long keypad_get(size_t len, rgb_lcd lcd, Keypad keypad);
+String keypad_get(size_t len, rgb_lcd lcd, Keypad keypad);
 
 void clear_line(uint8_t line,rgb_lcd lcd);
 #endif

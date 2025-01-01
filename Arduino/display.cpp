@@ -10,7 +10,7 @@ void clear_line(uint8_t line, rgb_lcd lcd) {
   lcd.setCursor(0, line);
 }
 
-long keypad_get(size_t len, rgb_lcd lcd, Keypad keypad) {
+String keypad_get(size_t len, rgb_lcd lcd, Keypad keypad) {
   clear_line(1, lcd);
   String s;
   while (s.length() < 6) {
@@ -25,6 +25,5 @@ long keypad_get(size_t len, rgb_lcd lcd, Keypad keypad) {
       lcd.print(String(c).c_str());
     }
   }
-  long res = atol(s.c_str());
-  return res;
+  return s;
 }

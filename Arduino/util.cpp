@@ -39,5 +39,5 @@ int get_current_time(RTCTime &rtime,const char* ssid,const char* pass) {
 }
 
 bool is_people_nearby() {
-    return digitalRead(sensor_pin) == HIGH;
+    return digitalRead(12) == HIGH;
 }

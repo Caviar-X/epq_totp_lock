@@ -1,3 +1,2 @@
-# EPQ TOTP DOORLOCK
-
-arduino program & maybe client program here
+## EPQ TOTP DOORLOCK
+Arduino Code & client Program (optional)

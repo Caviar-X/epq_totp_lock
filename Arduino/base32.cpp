@@ -22,7 +22,7 @@ static int decode_sym(int sym) {
 
 int base32_encode(char *dest, int destlen_chars, const void *srcbits,
                   int srclen_bits) {
-  const unsigned char *src = srcbits;
+  const unsigned char *src = (const unsigned char*)srcbits;
   int dstlen_need = (srclen_bits + 4) / 5 + 1, i, didx = 0;
   *dest = 0;
   if (destlen_chars < dstlen_need) {

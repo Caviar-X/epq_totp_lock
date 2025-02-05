@@ -11,6 +11,7 @@ void clear_line(uint8_t line, rgb_lcd lcd) {
 }
 
 String keypad_get(size_t len, rgb_lcd lcd, Keypad keypad) {
+  // on line two
   clear_line(1, lcd);
   String s;
   while (s.length() < 6) {

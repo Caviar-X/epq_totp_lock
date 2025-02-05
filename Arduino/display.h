@@ -4,21 +4,14 @@
 #include "Keypad.h"
 #include "rgb_lcd.h"
 #include <stdlib.h>
-// make other compiler happy
-#ifndef ARDUINO
-typedef unsigned char byte;
-#endif
+
 const static int ROWS = 4, COLS = 3;
 
-/**
- No one knows why
- Do not touch
-*/
 static char KEYPAD[4][3] = {
   { '1', '2', '3' },
   { '4', '5', '6' },
-  { '*', '0', '#' },
-  { '7', '8', '9' }
+  { '7', '8', '9' },
+  { '*', '0', '#' }
 };
 
 // NOTE: Change the pins if physical pins are changed

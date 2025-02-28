@@ -19,7 +19,7 @@ String keypad_get(size_t len, rgb_lcd lcd, Keypad keypad) {
     if (c == 0 || c == '*') {
       continue;
     } else if (c == '#') {
-      clear_line(0, lcd);
+      clear_line(1, lcd);
       s = "";
     } else {
       s.concat(c);

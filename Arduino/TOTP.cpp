@@ -83,7 +83,7 @@ char *TOTP::getCodeFromSteps(long steps, int codeLen) {
 		_truncatedHash <<= 8;
 		_truncatedHash  |= _hash[_offset + j];
 	}
-
+  Serial.println();
 	// STEP 3, compute the OTP value
 	_truncatedHash &= 0x7FFFFFFF;
 	_truncatedHash %= pow10(codeLen);

@@ -18,7 +18,7 @@ void setup() {
   servo.attach(10);
   RTC.begin();
   Serial.print("Get time...");
-  get_current_time(rtime, "Caviar-X", "Yu2008..@");
+  get_current_time(rtime, "", "");
   RTC.setTime(rtime);
   estimated.setUnixTime(0);
 }
